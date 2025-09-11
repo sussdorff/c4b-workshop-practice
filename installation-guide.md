@@ -202,6 +202,36 @@ claude --help    # Show all commands
 - **Use Context:** Let Claude understand your project first
 - **Review Changes:** Always review before accepting edits
 
+## Usage Tracking with ccusage Status Line (Optional)
+
+Track your Claude Code API usage costs in real-time with the ccusage status line:
+
+### Installation
+```bash
+npx -y ccusage statusline
+```
+
+### Configure Claude Code
+Add the status line to your Claude settings. Edit `~/.claude/settings.json` (or `~/.config/claude/settings.json`):
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccusage statusline",
+    "padding": 0
+  }
+}
+```
+
+### What It Shows
+- Real-time API usage costs
+- Token consumption
+- Helps monitor workshop usage
+- Visual indicators for cost tracking
+
+For more options: https://ccusage.com/guide/statusline
+
 ## Resources
 
 - **Official Docs:** https://docs.anthropic.com/en/docs/claude-code
