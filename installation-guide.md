@@ -54,9 +54,10 @@ On first run, Claude will:
 4. Create a "Claude Code" workspace
 
 **Authentication Options:**
-- **Claude.ai Pro/Max** (workshop default)
-- **Anthropic Console** (requires billing setup)
-- **Enterprise** (Amazon Bedrock/Google Vertex AI)
+- **Claude account with subscription** (workshop default)
+
+Then the browser will open and you will be asked to provide an E-Mail to login
+This E-Mail will be provided to you.
 
 ## Platform-Specific Notes
 
@@ -80,15 +81,36 @@ Try your first command:
 What does this project do?
 ```
 
+## Usage Tracking with ccusage Status Line (Optional)
+
+Track your Claude Code API usage costs in real-time with the ccusage status line:
+
+### Installation
+
+Add the status line to your Claude settings. Create the file `~/.claude/settings.json`:
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccusage statusline",
+    "padding": 0
+  }
+}
+```
+
+### What It Shows
+- Real-time API usage costs
+- Token consumption
+- Helps monitor workshop usage
+- Visual indicators for cost tracking
+
+For more options: https://ccusage.com/guide/statusline
+
 ## Workshop Practice Repository
 
 For the hands-on exercises in Block 2, we'll use a dedicated practice repository:
 
-### Clone the Practice Repository
-```bash
-git clone https://github.com/sussdorff/c4b-workshop-practice.git
-cd c4b-workshop-practice
-```
 
 This repository contains:
 - **calculator/** - Calculator module with intentional bugs to fix
@@ -102,40 +124,6 @@ You'll use this repository throughout Block 2 to practice:
 - Code improvements
 - Documentation
 
-## Quickstart Commands
-
-After installation, try these commands in order:
-
-### 1. Start Interactive Session
-```bash
-cd your-project-directory
-claude
-```
-
-### 2. Explore Your Project
-Ask Claude about your codebase:
-```
-What does this project do?
-What technologies does this project use?
-Where is the main entry point?
-```
-
-### 3. Make Your First Edit
-```
-Add a hello world function to this project
-```
-
-Claude will:
-- Find the appropriate file
-- Show you the proposed changes
-- Ask for your approval
-- Make the edit
-
-### 4. Git Integration
-```
-What files have I changed?
-Create a commit with these changes
-```
 
 ## Troubleshooting
 
@@ -202,35 +190,7 @@ claude --help    # Show all commands
 - **Use Context:** Let Claude understand your project first
 - **Review Changes:** Always review before accepting edits
 
-## Usage Tracking with ccusage Status Line (Optional)
 
-Track your Claude Code API usage costs in real-time with the ccusage status line:
-
-### Installation
-```bash
-npx -y ccusage statusline
-```
-
-### Configure Claude Code
-Add the status line to your Claude settings. Edit `~/.claude/settings.json` (or `~/.config/claude/settings.json`):
-
-```json
-{
-  "statusLine": {
-    "type": "command",
-    "command": "npx -y ccusage statusline",
-    "padding": 0
-  }
-}
-```
-
-### What It Shows
-- Real-time API usage costs
-- Token consumption
-- Helps monitor workshop usage
-- Visual indicators for cost tracking
-
-For more options: https://ccusage.com/guide/statusline
 
 ## Resources
 
