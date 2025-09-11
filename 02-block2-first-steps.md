@@ -18,10 +18,7 @@ After this block you will be able to:
 
 ### Part A: Starting Your First Session (5 Min)
 ```bash
-# Navigate to the practice repository
-cd practice-repo-block2
-
-# Start Claude in interactive mode
+# Start Claude in interactive mode in the repo you just cloned
 claude
 ```
 

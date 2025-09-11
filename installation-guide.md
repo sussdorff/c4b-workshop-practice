@@ -69,6 +69,7 @@ This E-Mail will be provided to you.
 - Supports Windows Terminal, PowerShell, or Git Bash
 - WSL 1/2 fully supported
 - For Git Bash: Set `CLAUDE_CODE_GIT_BASH_PATH` environment variable
+- **PowerShell:** May require setting execution policy: `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`
 
 ### 4. First Test
 Navigate to any project directory and run:
@@ -88,6 +89,8 @@ Track your Claude Code API usage costs in real-time with the ccusage status line
 ### Installation
 
 Add the status line to your Claude settings. Create the file `~/.claude/settings.json`:
+
+Under Windows this would be in your UserDirectory .claude/settings.json
 
 ```json
 {
@@ -149,8 +152,11 @@ set PATH=%PATH%;%APPDATA%\npm
 #### Authentication Issues
 ```bash
 # Clear credentials and re-authenticate
-claude logout
-claude login
+claude 
+
+# Within claude use the slash commands
+/logout
+/login
 ```
 
 #### Permission Errors
