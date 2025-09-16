@@ -59,6 +59,36 @@ On first run, Claude will:
 Then the browser will open and you will be asked to provide an E-Mail to login
 This E-Mail will be provided to you.
 
+### Step 4: VS Code Integration (Recommended)
+
+After authentication, set up VS Code integration for the best development experience:
+
+```bash
+claude /ide
+```
+
+This command will:
+- Install the Claude Code VS Code extension automatically
+- Configure the extension with your authentication
+- Set up the integrated terminal for seamless workflow
+
+**Terminal Setup (Optional but Recommended):**
+```bash
+claude /terminal-setup
+```
+
+This configures your terminal for optimal Claude Code usage with:
+- Better command completion
+- Status line integration
+- Improved shell integration
+
+**Benefits of VS Code Integration:**
+- Code editing directly in VS Code while chatting with Claude
+- Syntax highlighting and IntelliSense support
+- Integrated terminal for running commands
+- Side-by-side code and chat interface
+- File explorer and git integration
+
 ## Platform-Specific Notes
 
 ### macOS/Linux
