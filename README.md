@@ -2,6 +2,13 @@
 
 This repository contains practice exercises for learning Claude Code in Block 2 of the workshop.
 
+## 📚 Workshop Materials
+All workshop handouts and materials can be found in the `workshop-materials/` directory:
+- **Block 1:** Installation guide and paradigm shift presentation
+- **Block 2:** First steps with Claude Code exercises
+- **Block 3:** Working with GitHub repositories (materials distributed during workshop)
+- **Block 4:** AI Agent interaction patterns (materials distributed during workshop)
+
 ## Structure
 
 ```
