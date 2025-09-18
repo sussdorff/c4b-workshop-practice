@@ -13,7 +13,7 @@ After this block you will be able to:
 
 ---
 
-## 📚 Exercise 1: Interactive Exploration (11:00-11:25)
+## 📚 Exercise 1: Interactive Exploration (11:15-11:40)
 **Goal:** Master the interactive session workflow
 
 ### Part A: Starting Your First Session (5 Min)
@@ -74,7 +74,7 @@ Explain why each was a bug
 
 ---
 
-## 📚 Exercise 2: Git Integration & Workflow (11:30-11:55)
+## 📚 Exercise 2: Git Integration & Workflow (11:45-12:10)
 **Goal:** Use Claude's Git awareness for real development
 
 ### Part A: Check Current State (5 Min)
@@ -122,7 +122,7 @@ Claude understands natural Git commands:
 
 ---
 
-## 📚 Exercise 3: Advanced Workflows (12:00-12:25)
+## 📚 Exercise 3: Advanced Workflows (12:15-12:40)
 **Goal:** Apply Claude to real development tasks
 
 ### Part A: Test-Driven Development (8 Min)
