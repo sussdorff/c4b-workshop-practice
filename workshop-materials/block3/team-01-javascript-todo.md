@@ -78,7 +78,7 @@ Before you can run browser tests, install the Playwright MCP server in your loca
 
 ```bash
 # Install Playwright MCP server for browser automation
-claude mcp add-json "playwright" '{"command":"npx","args":["@playwright/mcp@latest","--extension"]}'
+claude mcp add playwright npx -- @playwright/mcp@latest --extension
 ```
 
 This enables Claude to control a browser and interact with your todo application just like a real user would.

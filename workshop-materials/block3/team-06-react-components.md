@@ -82,7 +82,7 @@ Testing React Bootstrap components requires understanding their behavior across 
 First, install the Playwright MCP server for testing capabilities:
 
 ```bash
-claude mcp add-json "playwright" '{"command":"npx","args":["@playwright/mcp@latest","--extension"]}'
+claude mcp add playwright npx -- @playwright/mcp@latest --extension
 ```
 
 ### Testing Strategy

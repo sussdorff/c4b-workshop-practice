@@ -84,7 +84,7 @@ First, install the Playwright MCP server in your calculator project:
 cd calculator
 
 # Install Playwright MCP server
-claude mcp add-json "playwright" '{"command":"npx","args":["@playwright/mcp@latest","--extension"]}'
+claude mcp add playwright npx -- @playwright/mcp@latest --extension
 ```
 
 ### Test Examples for Existing Calculator Functionality
