@@ -227,8 +227,7 @@ Refactor to use async/await instead of callbacks
 3. **Plan Complex Tasks:** Use `/plan` for multi-step features
 4. **Let Claude Explore First:** Start with "What does this project do?"
 5. **Be Specific:** "Add error handling to the login function" > "fix this"
-6. **Review Changes:** Always review before accepting (y/n)
-7. **Use Context:** Claude remembers your conversation history
+6. **For NOW - Review Changes:** Always review before accepting (y/n)
 
 ### Effective Workflows
 ```
