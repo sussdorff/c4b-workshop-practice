@@ -106,10 +106,8 @@ git commit -m "feat: Initial landing page defining MVP scope"
 # Create GitHub repository and push
 gh repo create my-mvp-project --public --source=. --remote=origin --push
 
-# Enable GitHub Pages
-gh api repos/:owner/:repo/pages \
-  --method POST \
-  --field source='{"branch":"main","path":"/"}'
+# Enable GitHub Pages (Windows-compatible one-liner)
+gh api repos/:owner/:repo/pages --method POST --field source[branch]=main --field source[path]=/
 
 # Get your live URL (wait ~1 minute for deployment)
 echo "Your site will be live at:"
